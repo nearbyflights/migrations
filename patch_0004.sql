@@ -1,0 +1,1 @@
+UPDATE public.hydra_client SET token_endpoint_auth_method = 'client_secret_post' WHERE id = 'test-client';

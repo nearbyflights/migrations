@@ -1,0 +1,9 @@
+﻿DELETE FROM public.hydra_client;
+
+INSERT INTO public.hydra_client
+	(id, client_name, client_secret, redirect_uris, grant_types, response_types, scope, owner, policy_uri, tos_uri, client_uri, logo_uri, contacts, client_secret_expires_at, sector_identifier_uri, jwks, jwks_uri, request_uris, token_endpoint_auth_method, request_object_signing_alg, userinfo_signed_response_alg, subject_type, allowed_cors_origins, pk, audience, created_at, updated_at, frontchannel_logout_uri, frontchannel_logout_session_required, post_logout_redirect_uris, backchannel_logout_uri, backchannel_logout_session_required, metadata, token_endpoint_auth_signing_alg)
+	VALUES ('test-client','','$2a$10$Y8QmeCQs.xoDRp6tO4jD3u.T6s.KvJzisZcfP/V0e4lQUa9JKOgqa','http://localhost:15000/callback','authorization_code|refresh_token','code|id_token','openid offline','','','','','','',0,'','{}','','','client_secret_basic','','none','public','',2,'','2021-03-07 01:47:56','2021-03-07 01:47:56.513162','',False,'','',False,'{}','');
+	
+INSERT INTO public.hydra_client
+	(id, client_name, client_secret, redirect_uris, grant_types, response_types, scope, owner, policy_uri, tos_uri, client_uri, logo_uri, contacts, client_secret_expires_at, sector_identifier_uri, jwks, jwks_uri, request_uris, token_endpoint_auth_method, request_object_signing_alg, userinfo_signed_response_alg, subject_type, allowed_cors_origins, pk, audience, created_at, updated_at, frontchannel_logout_uri, frontchannel_logout_session_required, post_logout_redirect_uris, backchannel_logout_uri, backchannel_logout_session_required, metadata, token_endpoint_auth_signing_alg)
+	VALUES ('mobile-client','','$2a$10$27j/az1YAxjxdtVbhIuuKuFRKU7pwNFWvijBs7X0Y3Q.XLuw62/yy','com.fagnercarvalho.nearbyflights:/callback','authorization_code|refresh_token','code|id_token','openid offline','','','','','','',0,'','{}','','','none','','none','public','',3,'','2021-03-07 01:49:50','2021-03-07 01:49:49.579039','',False,'','',False,'{}','');
