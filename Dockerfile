@@ -1,4 +1,4 @@
-FROM adoptopenjdk:11-jre-hotspot-focal
+FROM adoptopenjdk:11-jre-hotspot-bionic
 
 # Add the flyway user and step in the directory
 RUN adduser --system --home /flyway --disabled-password --group flyway
