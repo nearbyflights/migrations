@@ -23,7 +23,7 @@ And then run the Docker file:
 docker build -t migrations . && docker run --rm --env-file .env --name migrations-standalone migrations
 ```
 
-
+This will run all migrations in the target database. In case the database is up to date no migrations will be executed. In case the database was updated manually since the last migration you will need to update the checksum of the latest migration in the `flyway_schema_history` to match the checksum `flyway` is expecting.
 
 
 
